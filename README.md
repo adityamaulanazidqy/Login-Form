@@ -9,9 +9,6 @@ Namun untuk opsi akun Google dan Apple masih belum bisa digunakan. Mungkin lain 
 - Notifikasi menggunakan SweetAlert2 untuk memberikan umpan balik kepada pengguna mengenai status login.
 - Responsif dan dapat digunakan di berbagai perangkat.
 
-## Struktur Proyek
-. ├── assets │ ├── css │ │ └── style.css # File CSS untuk styling form │ ├── html │ │ └── test.html # Halaman yang dituju setelah login berhasil │ └── logos │ ├── apple.png # Logo Apple │ └── google.png # Logo Google └── php └── prosesLogin.php # Script PHP untuk memproses login
-
 ## Cara Menggunakan
 1. Clone repositori ini ke mesin lokal Anda:
    ```bash
@@ -28,3 +25,6 @@ Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request atau bu
 
 ## Lisensi
 Proyek ini tidak memiliki lisensi khusus. Silakan gunakan sesuai kebutuhan Anda.
+
+## NB
+Jika bingung dengan struktur proyeknya, minta bantuan dengan guru/pembimbing kalian
