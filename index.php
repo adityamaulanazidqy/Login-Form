@@ -12,7 +12,7 @@
 <body>
   <div class="login_form">
     <!-- Login form container -->
-    <form action="assets/php/login.php">
+    <form action="assets/php/prosesLogin.php">
       <h3>Log in with</h3>
 
       <div class="login_option">
@@ -70,7 +70,7 @@
 
       // Buat permintaan AJAX
       let xhr = new XMLHttpRequest();
-      xhr.open("POST", "assets/php/login.php", true);
+      xhr.open("POST", "assets/php/prosesLogin.php", true);
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
       xhr.onload = function() {
