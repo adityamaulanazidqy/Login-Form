@@ -10,16 +10,7 @@ Namun untuk opsi akun Google dan Apple masih belum bisa digunakan. Mungkin lain 
 - Responsif dan dapat digunakan di berbagai perangkat.
 
 ## Struktur Proyek
-assets-> css-> style.css
-         html-> test.html
-         logos-> apple.png
-                 google.png
-         php-> koneksi.php
-               prosesLogin.php
-               prosesLogout.php
-               prosesSignup.php
-signup.php
-index.php
+. ├── assets │ ├── css │ │ └── style.css # File CSS untuk styling form │ ├── html │ │ └── test.html # Halaman yang dituju setelah login berhasil │ └── logos │ ├── apple.png # Logo Apple │ └── google.png # Logo Google └── php └── prosesLogin.php # Script PHP untuk memproses login
 
 ## Cara Menggunakan
 1. Clone repositori ini ke mesin lokal Anda:
