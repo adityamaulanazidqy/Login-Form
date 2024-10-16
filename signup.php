@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="login_form">
+    <div class="login_form form_signup">
         <!-- Sign Up form container -->
         <form action="assets/php/prosesSignup.php" method="POST">
             <h3>Sign Up with</h3>
