@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        /* Google Fonts Link */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Resetting default styling and setting font-family */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #626cd6;
+            /* Warna latar belakang yang lembut */
+        }
+
+        /* Container for the dashboard */
+        .dashboard-container {
+            text-align: center;
+            background: #ffffff;
+            /* Putih untuk kontras */
+            border-radius: 8px;
+            /* Sudut yang melengkung */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Bayangan halus */
+            padding: 40px 20px;
+            /* Padding yang nyaman */
+            max-width: 400px;
+            /* Lebar maksimum */
+            width: 90%;
+            /* Lebar responsif */
+        }
+
+        /* Heading style */
+        .dashboard-container h1 {
+            font-size: 24px;
+            /* Ukuran font yang lebih besar */
+            color: #333;
+            /* Warna teks gelap */
+            margin-bottom: 20px;
+            /* Ruang di bawah heading */
+        }
+
+        /* Button style */
+        button {
+            padding: 12px 20px;
+            /* Padding tombol */
+            font-size: 16px;
+            /* Ukuran font tombol */
+            font-weight: 700;
+            /* Tebal */
+            color: #fff;
+            /* Warna teks putih */
+            background: #626cd6;
+            /* Warna latar belakang tombol */
+            border: none;
+            /* Tanpa border */
+            border-radius: 5px;
+            /* Sudut melengkung */
+            cursor: pointer;
+            /* Kursor tangan */
+            transition: background-color 0.3s;
+            /* Transisi untuk hover */
+        }
+
+        button:hover {
+            background: #4954d0;
+            /* Warna saat hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1>Selamat Datang di Dashboard</h1>
+        <button id="logoutBtn">Log Out</button>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            Swal.fire({
+                title: 'Apakah kamu yakin untuk log out?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Ya, log out!',
+                cancelButtonText: 'Tidak, batalkan'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '../../index.php';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
